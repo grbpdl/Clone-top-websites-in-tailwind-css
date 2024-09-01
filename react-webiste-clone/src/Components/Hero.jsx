@@ -9,8 +9,13 @@ function Hero() {
      <p className='text-[#F6F7F9] text-[52px] font-semibold'>React</p>
      <p className='text-[#F6F7F9] text-[32px] py-4 font-semibold'>The library for web and native user interfaces</p>
      
+     <div>
+      <a href='#' className='bg-[#61dbfb] rounded-full p-2 m-1 text-[#000] font-semibold'>Learn React</a>
+      <a href='#' className='bg-navbar-bg text-white border border-white p-2 m-1 rounded-full font-semibold'>API Refrence</a>
+
       </div>
-      <button>This is a button</button>
+      </div>
+     
     </div>
   )
 }
