@@ -1,13 +1,13 @@
 import React from 'react'
 
-function Card({title,firstpara,lastpara,children}) {
+function Card({title,firstpara,lastpara,children,backgroundColor = 'bg-[#191b21]'}) {
   const words = title.split(' ');
 
   // Join the first two words and the rest of the sentence with a line break in between
   const formattedSentence = `${words.slice(0, 2).join(' ')}<br />${words.slice(2).join(' ')}`;
   return (
-    <div className="mx-auto flex flex-col w-full bg-[#191b21] ">
-    <div className='w-full  flex flex-col gap-2 grow my-20 lg:my-32 mx-auto items-center  bg-[#191b21]'>
+    <div className={`${backgroundColor} mx-auto flex flex-col w-full  `}>
+    <div className= {`${backgroundColor} 'w-full  flex flex-col gap-2 grow my-20 lg:my-32 mx-auto items-center `}>
       <div>
      <p dangerouslySetInnerHTML={{ __html: formattedSentence }}  className='font-bold text-center text-white text-[52px] mb-7' />
      <p className=' text-center text-[#EBECF0] text-[20px] mx-auto max-w-3xl'>{firstpara}
