@@ -2,6 +2,7 @@
 import './App.css';
 import AnimatedCard from './Components/AnimatedCard';
 import Card from './Components/Card';
+import FooterPage from './Components/FooterPage';
 import FourCards from './Components/FourCards';
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
@@ -39,6 +40,7 @@ Build for native platforms -&gt;
 
 <FourCards/>
 <AnimatedCard/>
+<FooterPage/>
 
 
    
