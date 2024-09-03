@@ -21,7 +21,18 @@ module.exports = {
    
       'navbar-bg':'#23272FF2',
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        moveLeftRight: {
+          '0%': { transform: 'translateX(100%)' },   // Start off-screen to the right
+          '100%': { transform: 'translateX(-100%)' }, // Move completely off-screen to the left
+        },
+      },
+      animation: {
+        moveLeftRight: 'moveLeftRight 15s linear infinite',
+      },
+
+    },
   },
   plugins: [],
 }

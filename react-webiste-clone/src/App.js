@@ -1,5 +1,6 @@
 
 import './App.css';
+import AnimatedCard from './Components/AnimatedCard';
 import Card from './Components/Card';
 import FourCards from './Components/FourCards';
 import Hero from './Components/Hero';
@@ -37,6 +38,7 @@ Build for native platforms -&gt;
 </Card>
 
 <FourCards/>
+<AnimatedCard/>
 
 
    
